@@ -8,6 +8,7 @@ detailsSubmitButton.addEventListener('click', function(){
     const buyerDetailsInput =document.getElementById('buyer-details-input');
     const buyerInfo = document.getElementById('buyer-info');
     buyerInfo.innerText = buyerDetailsInput.value;
+    buyerDetailsInput.value = '';
    
 })
 
