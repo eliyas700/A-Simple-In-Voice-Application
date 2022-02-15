@@ -61,7 +61,8 @@ const addButton = document.getElementById('add-details-btn');
            const taxMoney = document.getElementById('tax');
             taxMoney.innerText= tax.toFixed(2);; 
             const grandTotal= document.getElementById('grand-total');
-            grandTotal.innerText = parseFloat(subTotalDisplay)+ parseFloat(tax);
+            const grandTotalResult= parseFloat(subTotalDisplay)+ parseFloat(tax);
+            grandTotal.innerText = grandTotalResult.toFixed(2);
             document.getElementById("grand-total-2").innerText= grandTotal.innerText;
         }
         
